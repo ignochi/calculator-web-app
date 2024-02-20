@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto" />
+
+    <script src="https://kit.fontawesome.com/1f128de6ce.js"
+    crossorigin="anonymous"></script>
+    <script src="main.js" async></script>
+</head>
+
+<body>
+    <main class="calculatorBody">
+        <section class="screen">
+            <div id="expression"></div>
+            <div id="answer"></div>
+        </section>
+
+        <div class="history"><button><i class="far fa-clock"></i> History</button></div>
+
+        <section class="buttons">
+            <button value="%" onclick="appendToResult('%')" class="specialKeys">%</button>
+            <button value="clearAll" onclick="clearResult('clearAll')" class="specialKeys">C</button>
+            <button value="" onclick="clearResult()" class="specialKeys far fa-times-circle"></button>
+            <button value="÷" onclick="appendToResult('÷')" class="specialKeys fas fa-divide"></button>
+            <button value="×" onclick="appendToResult('×')" class="specialKeys fas fa-times"></button>
+            <button value="-" onclick="appendToResult('-')" class="specialKeys fas fa-minus"></button>
+
+            <button value="1" onclick="appendToResult('1')">1</button>
+            <button value="2" onclick="appendToResult('2')">2</button>
+            <button value="3" onclick="appendToResult('3')">3</button>
+            <button value="4" onclick="appendToResult('4')">4</button>
+            <button value="5" onclick="appendToResult('5')">5</button>
+            <button value="+" onclick="appendToResult('+')" class="specialKeys fas fa-plus"></button>
+
+            <button value="6" onclick="appendToResult('6')">6</button>
+            <button value="7" onclick="appendToResult('7')">7</button>
+            <button value="8" onclick="appendToResult('8')">8</button>
+            <button value="9" onclick="appendToResult('9')">9</button>
+            <button value="0" onclick="appendToResult('0')">0</button>
+            <button value="." onclick="appendToResult('.')">.</button>
+
+            <button value="=" id="equalTo" class="fas fa-equals"></button>
+        </section>
+
+        <div class="maxWord"></div>
+    </main>
+
+    <section id="historyPage">
+        <div class="calculationSection">
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+            <div>
+                <p class="historyExpression"></p>
+                <p class="historyAnswer"></p>
+            </div>
+        </div>
+        <div class="clearBtnSection">
+            <button>Clear</button>
+            <button>back</button>
+        </div>
+    </section>
+</body>
+</html>
